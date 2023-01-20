@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+import java.text.DecimalFormat;
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -30,6 +30,7 @@ public class Main {
             sum = sum + expens;
         }
         System.out.println("Сумма трат за месяц составила: " + sum + " рублей");
+
     }
     public static void task2() {
         System.out.println("///// Task 2 /////");
@@ -56,8 +57,8 @@ public class Main {
             tmp += expens;
         }
         double averageExpense = (double) tmp / expenses.length;
-        System.out.println(averageExpense);
-        // String formattedBalance = new DecimalFormat("#0.00").format(balance);
+        String formattedAverageExpense = new DecimalFormat("#0.00").format(averageExpense);
+        System.out.println(formattedAverageExpense);
     }
     public static void task4() {
         System.out.println("///// Task 4 /////");
